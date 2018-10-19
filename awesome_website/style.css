@@ -1,0 +1,80 @@
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(fun.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+            }
+            
+            .row h3 {
+                font-size: 40px;
+                margin-top: 30px;
+                float: left;
+                color: white;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .row h3:hover {
+                color: maroon;
+                animation: spin 5s alternate linear infinite;
+            }
+            
+            @keyframes spin {
+                100% {
+                    transform: rotate(360deg) scale(0, 1);
+                }
+            }
+            
+            .main-nav {
+                float: right;
+                list-style: none;
+                margin-top: 30px;
+                margin-left: 5px;
+            }
+            
+            .main-nav li {
+                display: inline-block;
+            }
+            
+            .main-nav li a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-family: cursive;
+                font-size: 15px;
+            }
+            
+            .main-nav li a:hover {
+                color: maroon;
+            }
+            
+            .main-nav li.active {
+                border: 1px solid white;
+            }
+            
+            .hero {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                text-align: center;
+                margin: auto;
+            }
+            
+            .hero h3 {
+                color: white;
+                font-size: 40px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                animation: spin2 2s alternate linear infinite;
+            }
+            
+            @keyframes spin2 {
+                100% {
+                    transform: rotate(360deg);
+                    color: rgb(145, 29, 83);
+                }
+            }
